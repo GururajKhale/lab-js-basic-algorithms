@@ -50,3 +50,16 @@ if (hacker1.localeCompare(hacker2) < 0) {
   
   console.log(isPalindrome("A man, a plan, a canal, Panama!")); 
   console.log(isPalindrome("not a palindrome"));
+
+  //Bonus
+  let loremText = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae justo et sapien varius dignissim.
+Vestibulum et augue in nulla feugiat dignissim. Sed euismod, massa et facilisis posuere, ligula libero congue erat.
+Donec blandit, lorem et dignissim lacinia, justo odio facilisis odio, eget fermentum est enim in velit.
+`;
+
+let wordCount = loremText.split(/\s+/).length;
+console.log("Total number of words:", wordCount);
+
+let etCount = (loremText.match(/\bet\b/g) || []).length;
+console.log("Number of times 'et' appears:", etCount);
